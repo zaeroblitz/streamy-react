@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Header from "./Header";
@@ -9,10 +9,6 @@ import StreamDelete from "./streams/StreamDelete";
 import StreamShow from "./streams/StreamShow";
 
 const App = () => {
-  useEffect(() => {
-    console.log("Rendered for first time");
-  }, []);
-
   return (
     <div className="container mx-auto">
       <BrowserRouter>
